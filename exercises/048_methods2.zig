@@ -43,7 +43,7 @@ pub fn main() void {
     std.debug.print("\n", .{});
 }
 
-// This function visits all elephants once, starting with the
+// This function visits all elephants once, sstarting with the
 // first elephant and following the tails to the next elephant.
 fn visitElephants(first_elephant: *Elephant) void {
     var e = first_elephant;
@@ -54,7 +54,7 @@ fn visitElephants(first_elephant: *Elephant) void {
 
         // This gets the next elephant or stops:
         // which method do we want here?
-        e = if (e.hasTail()) e.??? else break;
+        e = if (e.hasTail()) e.getTail() else break;
     }
 }
 
